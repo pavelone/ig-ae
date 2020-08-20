@@ -1,0 +1,23 @@
+{
+  "name": "adverse-event-profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HealthSamurai/ig-ae"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HealthSamurai/ig-ae/issues"
+  },
+  "homepage": "https://github.com/HealthSamurai/ig-ae#readme",
+  "dependencies": {
+    "igpop": "^0.3.0",
+    "igpop-fhir-4.0.0": "^0.0.2-rc5"
+  }
+}
