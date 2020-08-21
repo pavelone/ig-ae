@@ -1,0 +1,24 @@
+description: Actual or  potential/avoided event causing unintended physical injury resulting from or contributed to by medical care, a research study or other healthcare setting factors that requires additional monitoring, treatment, or hospitalization, or that results in death.
+kind: resource
+elements:
+  Extension:
+    AZSourcing:
+      description: TODO put some meaningful description here
+      elements:
+        programName:
+          description: Program Name
+          type: string
+        localRefNo:
+          description: Local Ref No
+          type: string
+        intelligentSource:
+          description: Intelligent Source
+          type: code
+          valueset: {id: intelligent-source}
+        surveyStatus:
+          description: Survey Status
+          type: code
+          valueset: {id: survey-status}
+        lateReason:
+          description: Late reason for raising adverse event
+          type: string

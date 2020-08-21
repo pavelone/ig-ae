@@ -1,0 +1,13 @@
+description: Measurements and simple assertions made about a patient, device or other subject.
+kind: resource
+elements:
+  Extension:
+    pregnancyFlag:
+      description: Pregnancy
+      type: boolean
+    pregnancyDueDate:
+      description: Pregnancy Due Date
+      type: date
+    previousPregnanciesDetails:
+      description: Details of previous pregnancies
+      type: string
