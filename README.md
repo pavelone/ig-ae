@@ -2,6 +2,8 @@
 
 Implementation Guide for Adverse Event.
 
+Current version is published at https://healthsamurai.github.io/ig-ae/
+
 ## Development
 
 In order to develop the implementation guide, do the following steps:
