@@ -6,7 +6,10 @@ script:
 
 before_deploy:
   - npm install
-  - java -jar "./node_modules/igpop/bin/igpop.jar" build "/ig-ae"
+  - git submodule init
+  - git submodule update
+  - (cd igpop && make build)
+  - java -jar "./igpop/target/igpop.jar" build "/ig-ae"
 
 deploy:
   provider: pages
