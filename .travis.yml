@@ -1,4 +1,4 @@
-language: java
+language: clojure
 before_install: echo $HOME
 
 script:
