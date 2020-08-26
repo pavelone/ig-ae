@@ -12,7 +12,7 @@ script:
 before_deploy:
   - npm install
   - git submodule init
-  - git submodule update
+  - git submodule update --remote
   - (cd igpop && make build)
   - java -jar "./igpop/target/igpop.jar" build "/ig-ae"
 
