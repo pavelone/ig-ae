@@ -1,7 +1,7 @@
 description: Measurements and simple assertions made about a patient, device or other subject.
 kind: resource
 elements:
-  Extension:
+  extension:
     pregnancyFlag:
       description: Pregnancy
       type: boolean
