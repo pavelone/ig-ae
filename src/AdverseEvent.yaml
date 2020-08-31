@@ -2,23 +2,35 @@ description: Actual or  potential/avoided event causing unintended physical inju
 kind: resource
 elements:
   extension:
-    AZSourcing:
-      description: TODO put some meaningful description here
-      elements:
-        programName:
-          description: Program Name
-          type: string
-        localRefNo:
-          description: Local Ref No
-          type: string
-        intelligentSource:
-          description: Intelligent Source
-          type: code
-          valueset: {id: intelligent-source}
-        surveyStatus:
-          description: Survey Status
-          type: code
-          valueset: {id: survey-status}
-        lateReason:
-          description: Late reason for raising adverse event
-          type: string
+    AZEmployeeReporter:
+      type: string
+    reporterType:
+      type: string
+    programNumber:
+      description: Program Number
+      type: string
+    localReference:
+      description: Local Ref No
+      type: string
+    sourceType:
+      description: Source Type
+      type: code
+      valueset: {id: intelligent-source}
+    surveyStatus:
+      description: Survey Status
+      type: code
+      valueset: {id: survey-status}
+    lateReason:
+      description: Late reason for raising adverse event
+      type: string
+  suspectEntity:
+    elements:
+      causality:
+        elements:
+          extension:
+            positiveDechallenge:
+              type: string
+            positiveRechallenge:
+              type: string
+            rechallenge:
+              type: string

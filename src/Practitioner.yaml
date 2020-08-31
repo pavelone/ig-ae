@@ -2,6 +2,16 @@ description: A person who is directly or indirectly involved in the provisioning
 kind: resource
 elements:
   extension:
-    consentToContact:
+    consentToContactPractitioner:
       description: Adverse Event Consent to Contact Extension
       type: boolean
+  address:
+    elements:
+      extension:
+        region:
+          type: CodeableConcept
+  name:
+    elements:
+      extension:
+        salutation:
+          type: CodeableConcept

@@ -5,16 +5,14 @@ description: |
   extensions, vocabularies and value sets SHALL be present in the resource when using this profile.
 elements:
   extension:
+    duration:
+      type: string
     seriousness:
       type: code
       valueset: {id: condition-seriousness}
     resultingCondition:
       type: code
       valueset: {id: resulting-condition}
-    positiveDechallenge:
-      type: boolean
-    positiveRechallenge:
-      type: boolean
     outcome:
       type: CodableConcept
       valueset: {id: condition-outcome}

@@ -1,0 +1,18 @@
+kind: resource
+elements:
+  extension:
+    actionTaken:
+      type: CodeableConcept
+    operatorDevice:
+      type: CodeableConcept
+    operatorDeviceOther:
+      type: string
+    productType:
+      type: string
+  dosage:
+    elements:
+      extension:
+        frequency:
+          type: CodeableConcept
+        unit:
+          type: CodeableConcept

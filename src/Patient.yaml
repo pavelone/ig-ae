@@ -8,8 +8,24 @@ elements:
   extension:
     ethnicity:
       description: Adverse Event Ethnicity Extension
-      type: code
+      type: CodeableConcept
       valueset: { id: detailed-ethnicity }
-    consentToContact:
+    consentToContactPatient:
       description: Adverse Event Consent to Contact Extension
       type: boolean
+    gender:
+      type: CodeableConcept
+    ageGroup:
+      type: CodeableConcept
+    patientAge:
+      type: integer
+  address:
+    elements:
+      extension:
+        region:
+          type: CodeableConcept
+  name:
+    elements:
+      extension:
+        salutation:
+          type: CodeableConcept
